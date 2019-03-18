@@ -1,0 +1,268 @@
+﻿        <!DOCTYPE html>
+        <html>	
+        <head>
+            <title>Quiz</title>
+            <link href ="quiz.css" rel ="stylesheet">
+            <link href ="navigation.css" rel ="stylesheet">
+            <link rel="icon" href="toursl.png">
+            <script src = "quiz.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+
+        <body>
+            <div>
+                <a href="index.html"><img id="sl" src="toursl.png"></a>
+                <div id="navigation">
+                    <ul class = "ul">
+                        <li class = "li"><a class="active" href="index.html">Home</a></li>
+                        <li class = "li"><a href="gallery.html">Gallery</a></li>
+                        <li class = "li"><a href="quiz.html">Quiz</a></li>
+                        <li class = "li"><a href="products.html">Products</a></li>
+                        <li class = "li"><a href="aboutus.html">About Us</a></li>
+                        <li class = "li"><a href="comment.html">Feedback</a></li>
+                        <li class = "li"><a href="sitemap.html">Sitemap</a></li>
+					
+                    </ul>
+                </div>  
+            </div>
+            
+            <!--To set the inner HTML when the finish quiz button is clicked-->
+            <h1 id = "finishHeader"></h1>
+            
+            <!--Header of the quiz page-->            
+            <h1 id="quizTime">It's quiz time !</h1>
+
+            <!--To display the timer-->            
+            <div id="timer" style="font-weight: bold"></div> 
+            
+            <!--To display the intro, rules and boundaries of the quiz-->                        
+            <div id="quizIntro">                
+                <div id = "introText">
+                <p class = "intro">Are you ready to answer the quiz ? </p> 
+                    <ul class = "intro">
+                        <li>10 Questions</li>
+                        <li>3 minutes</li>
+                        <li>No backtracking</li>
+                        <li>2 marks for each correct answer</li>
+                        <li>1 mark reduced for each wrong answer</li>
+                    </ul>
+                
+                    <input id = "introBtn" class="buttons" type = "button" value = "Start the quiz" onclick = "start();">
+                </div>
+            </div>
+            
+            <!--First Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz1" name = "quiz1">  
+                <img class = "pic" src="Capital.jpg" align="right">
+                <div class="questions">
+                    <p>1. What is the capital of Sri Lanka?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question1" value = "Colombo"> Colombo<br>
+                    <input type = "radio" class = "q" name = "question1" value = "Kandy"> Kandy<br>
+                    <input type = "radio" class = "q" name = "question1" value = "Sri Jayawardhenapura Kotte"> Sri Jayawardhenapura Kotte<br>
+                    <input type = "radio" class = "q" name = "question1" value = "Galle"> Galle<br>
+                    <input class="buttons" id = "button1" type = "button" value = "Next >>" onclick = "check1();">
+                </div>
+            </form>
+
+            <!--Second Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz2" name = "quiz2">
+                <img class = "pic" src="Sigiriya.jpg" align="right">
+                <div class="questions">
+                    <p>2. Who built Sigiriya?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question2" value = "King Kashyapa"> King Kashyapa<br>
+                    <input type = "radio" class = "q" name = "question2" value = "King Kawantissa"> King Kawantissa<br>
+                    <input type = "radio" class = "q" name = "question2" value = "King Dutugemunu"> King Dutugemunu<br>
+                    <input type = "radio" class = "q" name = "question2" value = "King Asoka"> King Asoka<br>
+                    <input class="buttons" id = "button2" type = "button" value = "Next >>" onclick = "check2();">
+                </div>
+            </form>
+
+            <!--Third Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz3" name = "quiz3">
+                <img class = "pic" src="SriLanka.jpg" align="right">
+                <div class="questions">
+                    <p>3. How many provinces are there in Sri Lanka?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question3" value = "4"> 4<br>
+                    <input type = "radio" class = "q" name = "question3" value = "6"> 6<br>
+                    <input type = "radio" class = "q" name = "question3" value = "7"> 7<br>
+                    <input type = "radio" class = "q" name = "question3" value = "9"> 9<br>
+                    <input class="buttons" id = "button3" type = "button" value = "Next >>" onclick = "check3();">
+                </div>
+            </form>
+
+            <!--Fourth Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz4" name = "quiz4">
+                <img class = "pic" src="Temple.jpg" align="right">
+                <div class="questions">
+                    <p>4. Where is the Temple of the Tooth Relic situated?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question4" value = "Galle"> Galle<br>
+                    <input type = "radio" class = "q" name = "question4" value = "Kandy"> Kandy<br>
+                    <input type = "radio" class = "q" name = "question4" value = "Colombo"> Colombo<br>
+                    <input type = "radio" class = "q" name = "question4" value = "Hambantota"> Hambantota<br>
+                    <input class="buttons" id = "button4" type = "button" value = "Next >>" onclick = "check4();">
+                </div>
+            </form>
+
+            <!--Fifth Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz5" name = "quiz5">
+                <img class = "pic" src="oldSL.jpg" align="right">
+                <div class="questions">
+                    <p>5. How was Sri Lanka formerly known by the British?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question5" value = "Tianzhu"> Tianzhu<br>
+                    <input type = "radio" class = "q" name = "question5" value = "Ceylon"> Ceylon<br>
+                    <input type = "radio" class = "q" name = "question5" value = "Kedah"> Kedah<br>
+                    <input type = "radio" class = "q" name = "question5" value = "Burma"> Burma<br>
+                    <input class="buttons" id = "button5" type = "button" value = "Next >>" onclick = "check5();">
+                </div>
+            </form>
+
+            <!--Sixth Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz6" name = "quiz6">
+                <img class = "pic" src="TallestMount.jpg" align="right">
+                <div class="questions">
+                    <p>6. What's the tallest mountain in Sri Lanka?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question6" value = "Gommoli Kanda"> Gommoli Kanda<br>
+                    <input type = "radio" class = "q" name = "question6" value = "Thotupola Kanda"> Thotupola Kanda<br>
+                    <input type = "radio" class = "q" name = "question6" value = "Mount Pedro"> Mount Pedro<br>
+                    <input type = "radio" class = "q" name = "question6" value = "Adam's Peak"> Adam's Peak<br>
+                    <input class="buttons" id = "button6" type = "button" value = "Next >>" onclick = "check6();">
+                </div>
+            </form>
+
+            <!--Seventh Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz7" name = "quiz7">
+                <img class = "pic" src="Currency.jpg" align="right">
+                <div class="questions">
+                    <p>7. What is the currency of Sri Lanka?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question7" value = "Euro"> Euro<br>
+                    <input type = "radio" class = "q" name = "question7" value = "Dollar"> Dollar<br>
+                    <input type = "radio" class = "q" name = "question7" value = "Rupee"> Rupee<br>
+                    <input type = "radio" class = "q" name = "question7" value = "Taka"> Taka<br>
+                    <input class="buttons" id = "button7" type = "button" value = "Next >>" onclick = "check7();">
+                </div>
+            </form>
+
+            <!--Eighth Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz8" name = "quiz8">
+                <img class = "pic" src="River.jpg" align="right">
+                <div class="questions">
+                    <p>8. What is the longest river in Sri Lanka?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question8" value = "Mahaweli"> Mahaweli<br>
+                    <input type = "radio" class = "q" name = "question8" value = "Kelani"> Kelani<br>
+                    <input type = "radio" class = "q" name = "question8" value = "Walawe"> Walawe<br>
+                    <input type = "radio" class = "q" name = "question8" value = "Kalu"> Kalu<br>
+                    <input class="buttons" id = "button8" type = "button" value = "Next >>" onclick = "check8();">
+                </div>
+            </form>
+
+            <!--Ninth Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz9" name = "quiz9">
+                <img class = "pic" src="Strait.jpg" align="right">
+                <div class="questions">
+                    <p>9.  What strait separates Sri Lanka from India?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question9" value = "Palk Strait"> Palk Strait<br>
+                    <input type = "radio" class = "q" name = "question9" value = "Cook Strait"> Cook Strait<br>
+                    <input type = "radio" class = "q" name = "question9" value = "Johore Strait"> Johore Strait<br>
+                    <input type = "radio" class = "q" name = "question9" value = "Malacca Strait"> Malacca Strait<br>
+                    <input class="buttons" id = "button9" type = "button" value = "Next >>" onclick = "check9();">
+                </div>
+            </form>
+
+            <!--Tenth Question of the Quiz-->                        
+            <form class = "quiz" id = "quiz10" name = "quiz10">
+            <img class = "pic" src="Fall.jpg" align="right">
+                <div class="questions">
+                    <p>10.  What is the tallest waterfall in Sri Lanka?</p>
+                    <br>
+                    <input type = "radio" class = "q" name = "question10" value = "Bambarakanda Falls"> Bambarakanda Falls<br>
+                    <input type = "radio" class = "q" name = "question10" value = "Laxapana Falls"> Laxapana Falls<br>
+                    <input type = "radio" class = "q" name = "question10" value = "Devon Falls"> Devon Falls<br>
+                    <input type = "radio" class = "q" name = "question10" value = "Diyaluma Falls"> Diyaluma Falls<br>
+                    <input class="buttons" id = "button10" type = "button" value = "Finish the quiz" onclick = "finish();">
+                </div>
+            </form>
+            
+            <!--To display the picture to show how well the user has done -->                        
+            <img id = "picture" align="right">
+        
+            <!--The Div that is displayed after submission or when the time runs out-->                        
+            <div id = "after_submit">
+                <p id = "number_correct"></p>
+                <p id = "message"></p>
+                <p id = "summary">The summary of your performance:</p>
+                <p id = "marks"></p>
+                <p id = "timeSpent"></p>
+                
+                <!--To display whaich questions are correct, wrong and left unanswered-->                                        
+                <div id = "results">
+                    <table>
+                        <tr>                    
+                            <td class = "result"> Question 01</td>
+                            <td class = "resulto" id="result1"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 02</td>
+                            <td class = "resulto" id="result2"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 03</td>
+                            <td class = "resulto" id="result3"></td>
+                        </tr>
+                    
+                        <tr>                    
+                            <td class = "result"> Question 04</td>
+                            <td class = "resulto" id="result4"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 05</td>
+                            <td class = "resulto" id="result5"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 06</td>
+                            <td class = "resulto" id="result6"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 07</td>
+                            <td class = "resulto" id="result7"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 08</td>
+                            <td class = "resulto" id="result8"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 09</td>
+                            <td class = "resulto" id="result9"></td>
+                        </tr>
+
+                        <tr>                    
+                            <td class = "result"> Question 10</td>
+                            <td class = "resulto" id="result10"></td>
+                        </tr>
+                    </table>    
+                </div>
+            </div>
+	 <!-- Footer  -->
+	      <div class="footer">
+	         <p id="footerEdit"> © Powered By Tour Srilanka 2018  &nbsp; Edited By <a href="CVJaneth.html">Hasal Fernando</a> 
+			 <div id="footerimg"> <img src="toursl.png" alt="Logo" height="20px" width="50px" >
+		 </p>
+	      </div>
+		</div> 
+           </body>
+</html>

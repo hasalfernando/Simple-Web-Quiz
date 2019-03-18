@@ -1,0 +1,47 @@
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-family:myFont1;
+	font-size:16px;
+}
+
+.li a:hover {
+    background-color: #111;
+}
+*{
+	margin:0;
+	padding:0;
+}
+@font-face{
+	font-family:myFont1;
+	src:url(Montserrat-Light.otf);
+}
+#navigation{
+	position:relative;
+	width:100%;
+	opacity:0.7;
+}
+
+#sl{
+	box-shadow:0px 4px 25px #000000;
+	position:relative;
+	width:180px;
+	height:100px;
+	float:left;
+	z-index:1;
+}
